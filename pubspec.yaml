@@ -33,6 +33,7 @@ dependencies:
   grouped_buttons: ^1.0.4
   youtube_player: ^3.4.1
   firebase_messaging: ^5.0.4
+  flutter_local_notifications: ^0.6.1
   google_places_picker: ^2.0.2+1
 
 

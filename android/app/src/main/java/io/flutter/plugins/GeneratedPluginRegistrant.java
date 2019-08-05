@@ -3,6 +3,7 @@ package io.flutter.plugins;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugins.connectivity.ConnectivityPlugin;
 import io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin;
+import com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin;
 import io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin;
 import com.theantimony.googleplacespicker.GooglePlacesPickerPlugin;
 import io.flutter.plugins.pathprovider.PathProviderPlugin;
@@ -21,6 +22,7 @@ public final class GeneratedPluginRegistrant {
     }
     ConnectivityPlugin.registerWith(registry.registrarFor("io.flutter.plugins.connectivity.ConnectivityPlugin"));
     FirebaseMessagingPlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin"));
+    FlutterLocalNotificationsPlugin.registerWith(registry.registrarFor("com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin"));
     FluttertoastPlugin.registerWith(registry.registrarFor("io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin"));
     GooglePlacesPickerPlugin.registerWith(registry.registrarFor("com.theantimony.googleplacespicker.GooglePlacesPickerPlugin"));
     PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));

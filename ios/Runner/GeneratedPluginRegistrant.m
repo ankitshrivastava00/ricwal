@@ -5,6 +5,7 @@
 #import "GeneratedPluginRegistrant.h"
 #import <connectivity/ConnectivityPlugin.h>
 #import <firebase_messaging/FirebaseMessagingPlugin.h>
+#import <flutter_local_notifications/FlutterLocalNotificationsPlugin.h>
 #import <fluttertoast/FluttertoastPlugin.h>
 #import <google_places_picker/GooglePlacesPickerPlugin.h>
 #import <path_provider/PathProviderPlugin.h>
@@ -18,6 +19,7 @@
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [FLTConnectivityPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTConnectivityPlugin"]];
   [FLTFirebaseMessagingPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseMessagingPlugin"]];
+  [FlutterLocalNotificationsPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterLocalNotificationsPlugin"]];
   [FluttertoastPlugin registerWithRegistrar:[registry registrarForPlugin:@"FluttertoastPlugin"]];
   [GooglePlacesPickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"GooglePlacesPickerPlugin"]];
   [FLTPathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPathProviderPlugin"]];
