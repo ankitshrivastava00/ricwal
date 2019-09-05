@@ -198,7 +198,8 @@ class LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return new WillPopScope(onWillPop: _onWillPop,child:
+    return new WillPopScope(
+        onWillPop: _onWillPop,child:
     new Scaffold(
       appBar: AppBar(
         title: Text('Login'),

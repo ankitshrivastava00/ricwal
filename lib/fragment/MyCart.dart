@@ -445,7 +445,7 @@ class CartState extends State<Cart> {
                             child: new Container(
                               margin: EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 5.0),
                               alignment: Alignment.center,
-                              child: Text('Apply Coupan', style: TextStyle(
+                              child: Text('Apply Coupon', style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                                 fontSize: 14.0,),),

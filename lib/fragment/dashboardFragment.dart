@@ -24,7 +24,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
   String reply = "", status = "";
   var isLoading = false;
   String _placeName = 'Your Location';
-// PlaceDetails _place=null,_destinationPlace=null;
+ //PlaceDetails _place=null,_destinationPlace=null;
  //PlaceDetails place,placeDestination;
   List<Product_model> lis = List();
   List<Product_model> addlist = List();
@@ -38,11 +38,12 @@ bool pickUpBool=true;
   @override
   void initState() {
     super.initState();
+ //   FlutterPlacesDialog.setGoogleApiKey("AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y");
   //  FlutterPlacesDialog.setGoogleApiKey("AIzaSyCnrQ33dccN8jKIZx9JfQzhDpv-1bfuqL0");
     Map map = {"page": '${_itemCount}'};
     apiRequest(Constants.PRODUCTLIST_URL, map);
     PluginGooglePlacePicker.initialize(
-      androidApiKey: "AIzaSyCarZg-pjH3T-d8XHqdfK_3dBPCtCn9m-w",
+      androidApiKey: "AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y",
       iosApiKey: "AIzaSyAZTopQP2kWlFcc99FIct88thJLP_O4PVA",
     );
   }
@@ -62,7 +63,6 @@ bool pickUpBool=true;
       //G_Longitude =place.longitude;
     });
   }
-
 
   void increment(){
     setState(() => _itemCount = _itemCount+1);
@@ -150,8 +150,7 @@ bool pickUpBool=true;
     }
   }
 
-/*
-  _showAutocomplete() async {
+ /* _showAutocomplete() async {
 
     if (pickUpBool) {
       try {
@@ -183,8 +182,7 @@ bool pickUpBool=true;
         }
       });
     }
-  }
-*/
+  }*/
 
   Future<String> addWishlist(String url, Map jsonMap) async {
     try {
@@ -307,11 +305,11 @@ bool pickUpBool=true;
         body: new SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              new Container(
+             /* new Container(
                 margin: EdgeInsets.fromLTRB(1.0, 1.0, 1.0, 1.0),
                 decoration: BoxDecoration(
                     color: Colors.green,
-                   /* border: Border(top: BorderSide(color: Colors.grey, width: 1.0))*/
+                   *//* border: Border(top: BorderSide(color: Colors.grey, width: 1.0))*//*
 
                 ),
                 child:Row(
@@ -337,7 +335,7 @@ bool pickUpBool=true;
                     ),
                   ],
                 ),
-              ),
+              ),*/
               new SizedBox(
                   height: 170.0,
                   width: double.infinity,

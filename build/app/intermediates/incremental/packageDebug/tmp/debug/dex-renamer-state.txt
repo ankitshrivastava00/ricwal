@@ -1,0 +1,4 @@
+#Tue Sep 03 14:37:00 IST 2019
+base.0=/Users/apple/Desktop/mobile_apps/ricwal/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

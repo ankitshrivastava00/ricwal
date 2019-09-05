@@ -190,14 +190,25 @@ class OtpvarifyState extends State<Otpvarify> {
     }
   }
 
+  Future<bool> _onWillPop() {
+    Navigator.pushReplacement(context,
+        new MaterialPageRoute(builder: (BuildContext context) => Login()));
+  }
+
   @override
   Widget build(BuildContext context) {
 
-    return new Scaffold(
-      /*appBar: AppBar(
-        title: new Text(""),
+    return  new WillPopScope(onWillPop: _onWillPop,child:new Scaffold(
+      appBar: AppBar(
+        title: new Text("Otp Verification"),
         backgroundColor: Colors.blue,
-      ),*/
+        leading: new IconButton(icon: const Icon(Icons.arrow_back_ios), onPressed: () {
+          Navigator.pushReplacement(context, new MaterialPageRoute(
+            builder: (BuildContext context) => new Login(),
+          ));
+        }),
+        automaticallyImplyLeading: false,
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Container(
@@ -289,6 +300,7 @@ class OtpvarifyState extends State<Otpvarify> {
             ),
           ),
         ),
+      ),
       ),
     );
   }

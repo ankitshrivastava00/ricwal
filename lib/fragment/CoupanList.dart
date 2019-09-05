@@ -130,7 +130,7 @@ class CoupanListState extends State<CoupanList> {
     return new Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.green,
-        title: new Text("Coupan"),
+        title: new Text("Coupon"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.home, color: Colors.green),
@@ -258,7 +258,7 @@ class CoupanListState extends State<CoupanList> {
                 }
                 else{
                   Fluttertoast.showToast(
-                      msg: "Sorry you cant apply this coupan",
+                      msg: "Sorry you cant apply this coupon",
                       toastLength: Toast.LENGTH_SHORT,
                       gravity: ToastGravity.BOTTOM,
                       timeInSecForIos: 1,
