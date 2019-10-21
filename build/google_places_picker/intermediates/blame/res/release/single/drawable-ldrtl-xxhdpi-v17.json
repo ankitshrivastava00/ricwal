@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/google_places_picker/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/google_places_picker/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/google_places_picker/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/google_places_picker/intermediates/res/merged/release/drawable-ldrtl-xxhdpi-v17/quantum_ic_arrow_back_grey600_24.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/jetified-places-1.1.0.aar/7b4983248b2bc4fb3e5e776e1737fd69/res/drawable-ldrtl-xxhdpi-v17/quantum_ic_arrow_back_grey600_24.png"
+    }
+]

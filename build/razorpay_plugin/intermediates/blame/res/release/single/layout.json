@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/layout/rzp_magic_base.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/layout/rzp_magic_base.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/layout/rzp_loader.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/layout/rzp_loader.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/layout/activity_razorpay.xml",
+        "source": "/home/abc/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/razorpay_plugin-0.2.9/android/src/main/res/layout/activity_razorpay.xml"
+    }
+]

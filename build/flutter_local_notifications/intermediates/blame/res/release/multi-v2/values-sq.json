@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/incremental/mergeReleaseResources/merged.dir/values-sq/values-sq.xml",
+            "map": [
+                {
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/values-sq/values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/values-sq/values-sq.xml",
+            "map": [
+                {
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/values-sq/values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

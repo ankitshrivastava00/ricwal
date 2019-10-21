@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable-xxhdpi-v4/rzp_name_logo.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable-xxhdpi-v4/rzp_name_logo.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable-xxhdpi-v4/rzp_logo.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable-xxhdpi-v4/rzp_logo.png"
+    }
+]

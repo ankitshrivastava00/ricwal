@@ -2,9 +2,10 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_places_picker/google_places_picker.dart';
-//import 'package:flutter_places_dialog/flutter_places_dialog.dart';
+//import 'package:google_places_picker/google_places_picker.dart';
+import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_places_picker/google_places_picker.dart';
 import 'package:ricwala_application/comman/Constants.dart';
 import 'package:ricwala_application/comman/CustomProgressLoader.dart';
 import 'package:ricwala_application/comman/LocationData.dart';
@@ -21,32 +22,36 @@ class dashboardFragment extends StatefulWidget {
 }
 
 class dashboardFragmentState extends State<dashboardFragment> {
+
   String reply = "", status = "";
   var isLoading = false;
   String _placeName = 'Your Location';
- //PlaceDetails _place=null,_destinationPlace=null;
- //PlaceDetails place,placeDestination;
+  PlaceDetails _place,_destinationPlace=null;
+  PlaceDetails place,placeDestination;
   List<Product_model> lis = List();
-  List<Product_model> addlist = List();
+  List<NetworkImage> imglist = List();
   DBProvider db;
   TextEditingController count = TextEditingController();
   Drawer home;
   int _itemCount  = 1;
   var currentLocation = LocationData;
-String pickUpLocation="Enter Location";
-bool pickUpBool=true;
+  String pickUpLocation="Enter Location";
+  bool pickUpBool=true;
+
   @override
   void initState() {
     super.initState();
- //   FlutterPlacesDialog.setGoogleApiKey("AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y");
+    FlutterPlacesDialog.setGoogleApiKey("AIzaSyBEwxjE4AxdBSQHseBvJ03xv4rfPpwBRFQ");
+  //  FlutterPlacesDialog.setGoogleApiKey("AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y");
   //  FlutterPlacesDialog.setGoogleApiKey("AIzaSyCnrQ33dccN8jKIZx9JfQzhDpv-1bfuqL0");
     Map map = {"page": '${_itemCount}'};
     apiRequest(Constants.PRODUCTLIST_URL, map);
-    PluginGooglePlacePicker.initialize(
+    /*PluginGooglePlacePicker.initialize(
       androidApiKey: "AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y",
       iosApiKey: "AIzaSyAZTopQP2kWlFcc99FIct88thJLP_O4PVA",
-    );
+    );*/
   }
+
   _showAutocomplete() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     var place = await PluginGooglePlacePicker.showAutocomplete(mode: PlaceAutocompleteMode.MODE_FULLSCREEN);
@@ -56,8 +61,8 @@ bool pickUpBool=true;
     // setState to update our non-existent appearance.
     if (!mounted)
       return;
-
     setState(() {
+      _placeName = pickUpLocation;
       pickUpLocation = '${place.name}, ${place.address}';
      // G_Latitude =place.latitude;
       //G_Longitude =place.longitude;
@@ -136,7 +141,6 @@ bool pickUpBool=true;
       }
     }*/
 
-
     catch (e) {
       setState(() {
         isLoading = false;
@@ -150,7 +154,7 @@ bool pickUpBool=true;
     }
   }
 
- /* _showAutocomplete() async {
+ _show_Autocomplete() async {
 
     if (pickUpBool) {
       try {
@@ -182,7 +186,7 @@ bool pickUpBool=true;
         }
       });
     }
-  }*/
+  }
 
   Future<String> addWishlist(String url, Map jsonMap) async {
     try {
@@ -213,7 +217,6 @@ bool pickUpBool=true;
             backgroundColor: Colors.green,
             textColor: Colors.white,
             fontSize: 16.0);
-
       } else if (message == "Duplicate record") {
         Fluttertoast.showToast(
             msg: "Already Exists",
@@ -299,43 +302,12 @@ bool pickUpBool=true;
         .of(context)
         .size;
     /*24 is for notification bar on Android*/
-    final double itemHeight = (size.height - kToolbarHeight - 24) / 2.3;
+    final double itemHeight = (size.height - kToolbarHeight - 24) / 2.2;
     final double itemWidth = size.width / 2;
     return Scaffold(
         body: new SingleChildScrollView(
           child: Column(
             children: <Widget>[
-             /* new Container(
-                margin: EdgeInsets.fromLTRB(1.0, 1.0, 1.0, 1.0),
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                   *//* border: Border(top: BorderSide(color: Colors.grey, width: 1.0))*//*
-
-                ),
-                child:Row(
-                  children: <Widget>[
-                    new Container(
-                      margin: EdgeInsets.fromLTRB(2.0, 5.0, 3.0, 5.0),
-                      child: Icon(Icons.location_on,color: Colors.white),width: 30.0,height: 30.0,
-                    ),
-                    new Expanded(child:
-                    new Container(
-                      margin: EdgeInsets.fromLTRB(2.0, 5.0, 3.0, 5.0),
-                      alignment: Alignment.center,
-                      child: FlatButton(
-                        onPressed: _showAutocomplete,
-                        child: Text(_placeName,
-                          textAlign: TextAlign.left,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white,fontSize: 15.0),
-                        ),
-                      ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),*/
               new SizedBox(
                   height: 170.0,
                   width: double.infinity,
@@ -397,8 +369,7 @@ bool pickUpBool=true;
                                         "product_name": '${lis[index].name}',
                                         "company_name": '${lis[index].company}',
                                         "image": '${lis[index].image}',
-                                        "description": '${lis[index]
-                                            .description}',
+                                        "description": '${lis[index].description}',
                                         "category": '${lis[index].category}',
                                         "quantity": '${lis[index].quantity}',
                                         "unit": '${lis[index].unit}',
@@ -424,11 +395,23 @@ bool pickUpBool=true;
                                     child: new Image.asset(
                                         'images/ricecan.jpg'),
                                     width: double.infinity,
-                                    height: 125.0,
+                                    height: 120.0,
                                   ),
-                                  new Row(
+                                  new Container(
+                                    margin: EdgeInsets.fromLTRB(2.0, 0.0, 2.0, 0.0),
+                                    alignment: Alignment.center,
+                                    child: new Text(
+                                      lis[index].name,
+                                      style: TextStyle(
+                                          fontSize: 13.0,
+                                          color: Colors.grey,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+
+                                 /* new Row(
                                     children: <Widget>[
-                                      new Container(
+                                     new Container(
                                         margin: EdgeInsets.fromLTRB(5.0, 0.0, 0.0, 0.0),
                                         alignment: Alignment.topLeft,
                                         child: new Text(
@@ -452,7 +435,7 @@ bool pickUpBool=true;
                                         ),
                                       ),
                                     ],
-                                  ),
+                                  ),*/
                                   new Row(
                                     children: <Widget>[
                                       new Container(
@@ -585,7 +568,7 @@ bool pickUpBool=true;
                                       productInfo(
                                           lis[index].name, lis[index].company,
                                           lis[index].description,
-                                          lis[index].price, lis[index].id)));
+                                          lis[index].price, lis[index].id,"1")));
                         },
                       ),
                     );

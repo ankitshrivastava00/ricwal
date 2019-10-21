@@ -17,12 +17,14 @@ class _HomeFragmentState extends State<HomeFragment> {
   String reply = "", status = "";
   List<Product_model> lis = List();
 
+
   @override
   void initState() {
     super.initState();
     Map map = {"page": "1"};
     apiRequest(Constants.PRODUCTLIST_URL, map);
   }
+
 
   Future<String> apiRequest(String url, Map jsonMap) async {
     try {

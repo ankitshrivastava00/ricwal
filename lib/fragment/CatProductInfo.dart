@@ -219,7 +219,7 @@ class CatProductInfoState extends State<CatProductInfo> {
                                 productInfo(
                                     lis[index].name, lis[index].category,
                                     lis[index].description,
-                                    lis[index].price, lis[index].id)));
+                                    lis[index].price, lis[index].id,lis[index].unit)));
                   },
                 );
               }),

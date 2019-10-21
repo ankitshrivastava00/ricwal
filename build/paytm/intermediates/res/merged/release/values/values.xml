@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="active_state_submit_button">#002E6E</color>
+    <color name="back_net_banking">#f3f7f8</color>
+    <color name="black">#000000</color>
+    <color name="inActive_state_submit_button">#9B9B9B</color>
+    <color name="submit_easy_pay">#00b9f5</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Easypay</string>
+    <string name="do_not_send_otp"> I will Use IPIN</string>
+    <string name="easypay_config_endpoint">http://10.0.28.74:8080/MerchantSite/db.json</string>
+    <string name="easypay_config_endpoint01">http://sachin.webscript.io/sachin</string>
+    <string name="easypay_config_endpoint02">http://10.0.9.39:8100/HANDLER_INTERNAL/easypayConfig</string>
+    <string name="easypay_error_endpoint">https://easypay.paytm.com/paytmAnalytics/logerror</string>
+    <string name="easypay_hide_password">Hide Password</string>
+    <string name="easypay_logevent_endpoint">https://easypay.paytm.com/paytmAnalytics/logevent</string>
+    <string name="easypay_show_password">Show Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_detected">OTP detected, press submit to continue</string>
+    <string name="message_not_detected">Message not detected, please enter OTP Manually</string>
+    <string name="number_correct">Number is correct! Send Otp</string>
+    <string name="number_incorrect">Details Do not match</string>
+    <string name="password_text">Password</string>
+    <string name="preferred_options">Please select your preferred option</string>
+    <string name="rember">Remember this User ID</string>
+    <string name="reset_password_text">Reset Password</string>
+    <string name="select_option_pay">Submit one of the following options to your bank</string>
+    <string name="send_otp">I will Use OTP</string>
+    <string name="submit">Continue</string>
+    <string name="submit_otp">Waiting to detect OTP (One Time Password)</string>
+    <string name="submit_password">Submit the following to your bank</string>
+    <string name="use_pin">Use Pin</string>
+    <string name="username">Save CustomerID</string>
+    <string name="verify_mobile_number">  Based on the information stored in our database your mobile number is : %s</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="BlueButton">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">#002E6E</item>
+    </style>
+    <style name="GreyButton">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">#9B9B9B</item>
+    </style>
+    <style name="TransparentProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

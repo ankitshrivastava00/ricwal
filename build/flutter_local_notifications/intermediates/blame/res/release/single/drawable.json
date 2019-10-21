@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/drawable/notification_bg.xml"
+    }
+]

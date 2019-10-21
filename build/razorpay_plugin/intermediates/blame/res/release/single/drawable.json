@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_white_border_black_bg.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_white_border_black_bg.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_border.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_border.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_loader_circle.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_loader_circle.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_secured_by_bg.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_secured_by_bg.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_border_bottom.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_border_bottom.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_poweredby.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_poweredby.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/razorpay_plugin/intermediates/res/merged/release/drawable/rzp_green_button.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/drawable/rzp_green_button.xml"
+    }
+]

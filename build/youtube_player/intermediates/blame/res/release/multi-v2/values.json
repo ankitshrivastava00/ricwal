@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/abc/MissMadhu/ricwal/build/youtube_player/intermediates/res/merged/release/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/android-youtubeExtractor-v2.4.1.aar/55412f8d10cf862cb35bbb6bbd79b5b7/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/abc/MissMadhu/ricwal/build/youtube_player/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/android-youtubeExtractor-v2.4.1.aar/55412f8d10cf862cb35bbb6bbd79b5b7/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    }
+                }
+            ]
+        }
+    ]
+}

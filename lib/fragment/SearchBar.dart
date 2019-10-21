@@ -425,7 +425,7 @@ class SearchBarState extends State<SearchBar> {
                                                       ),
                                                     ),
                                                   ],
-                                                ),
+                                                 ),
                                               ],
                                             ),
                                           ),
@@ -445,7 +445,7 @@ class SearchBarState extends State<SearchBar> {
                                         productInfo(
                                             lis[index].name, lis[index].category,
                                             lis[index].description,
-                                            lis[index].price, lis[index].id)));
+                                            lis[index].price, lis[index].id,"1")));
                           },
                         );
                       }),

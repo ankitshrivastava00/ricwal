@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_local_notifications/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/layout/notification_template_part_time.xml"
+    }
+]

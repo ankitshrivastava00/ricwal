@@ -21,7 +21,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBopLt39aYGIFV-T6ttO9UJEkDk8bLqn3Y"
+          "current_key": "AIzaSyBEwxjE4AxdBSQHseBvJ03xv4rfPpwBRFQ"
         }
       ],
       "services": {
@@ -30,6 +30,13 @@
             {
               "client_id": "981898058760-gkti3ottdfodqi0s1cgdj93l4mqml1p1.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "981898058760-ftnfa40ftmla4dgl4t50ll67r92197bs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ricwals"
+              }
             }
           ]
         }

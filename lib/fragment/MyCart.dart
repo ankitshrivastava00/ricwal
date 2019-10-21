@@ -341,7 +341,7 @@ class CartState extends State<Cart> {
                                                   margin: EdgeInsets.fromLTRB(
                                                       10.0, 0.0, 0.0, 0.0),
                                                   child: new Text(
-                                                    item.quantity,
+                                                    item.quantity.replaceAll(".0", ""),
                                                     style: TextStyle(
                                                       fontSize: 18.0,
                                                       color: Colors.green,
@@ -417,9 +417,11 @@ class CartState extends State<Cart> {
                               new MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       productInfo(
-                                          item.product_name, item.category,
+                                          item.product_name,
+                                          item.category,
                                           item.description,
-                                          pr.toString(), item.product_id)));
+                                          pr.toString(),
+                                          item.product_id,item.quantity)));
                         },
                         );
                       },
@@ -429,7 +431,8 @@ class CartState extends State<Cart> {
                   new Container(
                     color: Colors.white10,
                     margin: EdgeInsets.all(10.0),
-                    child: Container(
+                    child: Card(
+                      margin: EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
                       child: Row(
                         children: <Widget>[
                           new GestureDetector(

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/drawable-mdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_normal.9.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/drawable-mdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    }
+]

@@ -1,0 +1,7 @@
+#Mon Oct 21 11:05:15 IST 2019
+base.0=/home/abc/MissMadhu/ricwal/build/app/intermediates/transforms/dexMerger/release/0
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/abc/MissMadhu/ricwal/build/app/intermediates/transforms/dexMerger/release/0

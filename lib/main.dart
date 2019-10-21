@@ -47,6 +47,7 @@ class _MyAppState extends State<MyApp>  {
        Navigator.of(context).pushReplacementNamed('/splash');
     }
     }
+
   @override
   void initState() {
     super.initState();

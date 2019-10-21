@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/incremental/mergeReleaseResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

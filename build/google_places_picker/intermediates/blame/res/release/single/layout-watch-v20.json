@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/google_places_picker/intermediates/res/merged/release/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/google_places_picker/intermediates/res/merged/release/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    }
+]

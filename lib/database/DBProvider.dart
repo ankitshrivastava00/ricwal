@@ -131,22 +131,20 @@ class DBProvider {
   }
 */
 
-
   updateClient(String pro_id,String product_name,String product_quantity,String product_price, String product_category,String tablePrice,String tableQuan) async {
     final db = await database;
     double tabPrice = double.parse(tablePrice);
     double price = double.parse(product_price);
     double tabQuan = double.parse(tableQuan);
     double quantity = double.parse(product_quantity);
+
     var res =
-    db.rawUpdate("UPDATE Cart SET  quantity = '${(tabQuan+quantity).toString()}',price = '${(tabPrice+price).toString()}' WHERE product_id = '${pro_id}'");
+    db.rawUpdate("UPDATE Cart SET  quantity = '${(quantity).toString()}',price = '${(price).toString()}' WHERE product_id = '${pro_id}'");
     Fluttertoast.showToast(msg: "Update In Your Cart", toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM, timeInSecForIos: 1, backgroundColor: Colors.green,
         textColor: Colors.white, fontSize: 16.0);
-
     return res;
   }
-
 
   decrementClient(String pro_id,String product_name,String product_quantity, product_price,
       String product_category,String tablePrice,String tableQuan) async {

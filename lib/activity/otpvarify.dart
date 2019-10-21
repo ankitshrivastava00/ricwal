@@ -60,7 +60,7 @@ class OtpvarifyState extends State<Otpvarify> {
         String userid = details['_id'].toString();
 
         Fluttertoast.showToast(
-            msg: "Successfully Varified",
+            msg: "Successfully Verified",
             toastLength: Toast.LENGTH_SHORT,
             gravity: ToastGravity.BOTTOM,
             timeInSecForIos: 1,

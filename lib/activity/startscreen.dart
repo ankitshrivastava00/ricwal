@@ -31,18 +31,26 @@ class _StartScreenState extends State<StartScreen>{
       child: new Column(
         //  crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          new Image.asset('images/slider.png')
+          new Container(
+            height: 250.0,
+            width: double.infinity,
+            child: Image.asset('images/slider.png',fit: BoxFit.fitWidth),
+          )
+
+         // new
+
         ],
       ),
       //   ),
     );
     final textLabel = FlatButton(
       child: Text(
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.',
+        'RICWAL is an Agri-Business E-Commerce Start-up which provides best quality of rice to the customer’s door-step with an affordable price. The main agenda of Ricwal is to make sure that there is no middle men in between the producers and the consumers. So that the customers can get best quality rice at an affordable price. Ricwal has tied up with 100+ major rice industries in the state of Telangana and got associated with many rice brands like Lalitha, Lohitha, Bell, Fortune and 24 Mantra Organic rice brandRicwal also encourages and educates farmers on the production of organic rice which has a great demand in modern society. Ricwal is trying to bring the tremendous work done by the farmers to grow the crop into limelight by projecting them in farmer’s portal and educating them on how to produce good crops with good yield.',
         style: TextStyle(color: Colors.black54,
             fontFamily: 'Roboto:300'),textAlign: TextAlign.justify,
       ),
     );
+
     Widget body = new SingleChildScrollView(
       child: new Column(
         // This makes each child fill the full width of the screen
@@ -55,7 +63,7 @@ class _StartScreenState extends State<StartScreen>{
           textLabel,
           SizedBox(height: 15.0),
           new Container(
-            alignment: Alignment.bottomCenter,
+            alignment: FractionalOffset.bottomCenter,
             child: signUpButton,
           )
         ],

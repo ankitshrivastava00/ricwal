@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/flutter_places_dialog/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6e50060df92230d47b7be782d946da07/res/anim/abc_grow_fade_in_from_bottom.xml"
+    }
+]

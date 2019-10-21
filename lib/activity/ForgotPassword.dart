@@ -64,7 +64,7 @@ class ForgotPasswordyState extends State<ForgotPassword> {
 
       if(status=="200"){
         Fluttertoast.showToast(
-            msg: 'Password sent on your ragister number',
+            msg: 'Password sent to your ragistered mobile',
             toastLength: Toast.LENGTH_SHORT,
             gravity: ToastGravity.BOTTOM,
             timeInSecForIos: 1,

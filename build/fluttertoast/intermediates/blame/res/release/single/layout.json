@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/layout/toast_custom.xml",
+        "source": "/home/abc/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-3.1.0/android/src/main/res/layout/toast_custom.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/abc/MissMadhu/ricwal/build/fluttertoast/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/layout/notification_template_part_time.xml"
+    }
+]

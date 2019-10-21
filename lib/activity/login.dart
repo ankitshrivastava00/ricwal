@@ -348,6 +348,8 @@ class LoginState extends State<Login> {
                         )),
                   ),
                 ),
+
+
                 new GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -357,9 +359,7 @@ class LoginState extends State<Login> {
                   },
                   child: new Container(
                     margin: EdgeInsets.only(top: 15.0),
-                    child: new Text(
-                      "Dont have an account, Register now",
-                      style: TextStyle(
+                    child: new Text("Dont have an account, Register now", style: TextStyle(
                         fontSize: 14.0,
                         color: Colors.green,
                         fontWeight: FontWeight.bold,
