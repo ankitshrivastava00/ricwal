@@ -34,8 +34,6 @@ class productInfoState extends State<productInfo> {
   List<Photo> list = List();
   var isLoading = false;
 
-
-
   @override
   void initState() {
     // TODO: implement initState
