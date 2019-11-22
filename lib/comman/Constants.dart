@@ -1,5 +1,5 @@
 class Constants{
-  static final String BaseURL = "https://polar-basin-67929.herokuapp.com";
+  static final String BaseURL = "http://134.209.166.151";
   static final String LOGIN_URL = BaseURL+"/loginWebService";
   static final String SIGNUP_URL = BaseURL+"/signupWebService";
   static final String OTPVARIFY_URL = BaseURL+"/otpStatus";

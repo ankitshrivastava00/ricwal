@@ -33,7 +33,7 @@ class CatProductInfoState extends State<CatProductInfo> {
       "categoryid": '${widget.catid}',
       "subcategoryid": '${widget.subid}'
     };
-    catProduct("https://polar-basin-67929.herokuapp.com/sortbycategory", map);
+    catProduct("http://134.209.166.151/sortbycategory", map);
   }
 
   Future<String> catProduct(String url, Map jsonMap) async {

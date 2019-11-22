@@ -28,7 +28,7 @@ class ShopByCategoryState extends State<ShopByCategory> {
   @override
   Future initState() {
     super.initState();
-    exapnalist("https://polar-basin-67929.herokuapp.com/sortbycategory");
+    exapnalist("http://134.209.166.151/sortbycategory");
   }
 
 

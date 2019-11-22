@@ -31,8 +31,9 @@ class productInfoState extends State<productInfo> {
   double spinner;
   double total = 0;
   int count =0;
-  List<Photo> list = List();
+  List<String> list = [];
   var isLoading = false;
+
 
   @override
   void initState() {
@@ -98,7 +99,7 @@ class productInfoState extends State<productInfo> {
       for (var word in data['images']) {
         String image = word["imageUrl"].toString();
         setState(() {
-          list.add(Photo(image));
+          list.add(image);
         });
       }
 
@@ -175,7 +176,21 @@ class productInfoState extends State<productInfo> {
                 height: 170.0,
                 width: double.infinity,
                 child: CarouselSlider(
-                    items: [1,2,3,4].map((i) {
+                    items:list.map(
+                          (url) {
+                        return Container(
+                          margin: EdgeInsets.all(5.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                            child: Image.network(
+                             url,
+                              fit: BoxFit.cover,
+                              width: 1000.0,
+                            ),
+                          ),
+                        );
+                      },
+                    ).toList() /*[1,2,3].map((i) {
                       return new Builder(
                         builder: (BuildContext context) {
                           return new Container(
@@ -193,7 +208,7 @@ class productInfoState extends State<productInfo> {
                           );
                         },
                       );
-                    }).toList(),
+                    }).toList()*/,
                     height: 400.0,
                     autoPlay: true
                 ),
