@@ -17,7 +17,7 @@ void main() {
         ), home: new MyApp(),
     routes: <String, WidgetBuilder>{
       '/splash': (BuildContext context) => new StartScreen(),
-      '/HomeScreen': (BuildContext context) => new HomePage()
+      '/HomeScreen': (BuildContext context) => new HomePage(0)
     },
   ));
 }

@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:ricwala_application/activity/drawer.dart';
 //import 'package:image_picker/image_picker.dart';
 import 'package:ricwala_application/comman/Constants.dart';
 import 'package:ricwala_application/comman/CustomProgressLoader.dart';
@@ -26,6 +27,14 @@ class OrderStatusState extends State<OrderStatus> {
     showorder();
   }
 
+
+  Future<bool> _onBackPressed() {
+
+    Navigator.pushReplacement(
+        context,
+        new MaterialPageRoute(
+            builder: (BuildContext context) => HomePage(0)));
+  }
 
   Future showorder() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -119,7 +128,9 @@ class OrderStatusState extends State<OrderStatus> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-      return new Scaffold(
+    return new WillPopScope(
+        onWillPop: _onBackPressed,
+        child: Scaffold(
         body: new Container(
         child:isLoading ? Center(
         child: new Container(
@@ -197,7 +208,7 @@ class OrderStatusState extends State<OrderStatus> {
               );
             }),
         )
-      );
+      ));
 
 
   }

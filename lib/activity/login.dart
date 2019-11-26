@@ -74,7 +74,7 @@ class LoginState extends State<Login> {
         Navigator.pushReplacement(
             context,
             new MaterialPageRoute(
-                builder: (BuildContext context) => HomePage()));
+                builder: (BuildContext context) => HomePage(0)));
       }else if(status == "400"){
         Fluttertoast.showToast(
             msg: "Username and password is wrong",

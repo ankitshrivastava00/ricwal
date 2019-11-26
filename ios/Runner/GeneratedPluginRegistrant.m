@@ -8,7 +8,6 @@
 #import <flutter_local_notifications/FlutterLocalNotificationsPlugin.h>
 #import <flutter_places_dialog/FlutterPlacesDialogPlugin.h>
 #import <fluttertoast/FluttertoastPlugin.h>
-#import <google_places_picker/GooglePlacesPickerPlugin.h>
 #import <path_provider/PathProviderPlugin.h>
 #import <paytm/PaytmPlugin.h>
 #import <razorpay_plugin/RazorpayPlugin.h>
@@ -25,7 +24,6 @@
   [FlutterLocalNotificationsPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterLocalNotificationsPlugin"]];
   [FlutterPlacesDialogPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterPlacesDialogPlugin"]];
   [FluttertoastPlugin registerWithRegistrar:[registry registrarForPlugin:@"FluttertoastPlugin"]];
-  [GooglePlacesPickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"GooglePlacesPickerPlugin"]];
   [FLTPathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPathProviderPlugin"]];
   [PaytmPlugin registerWithRegistrar:[registry registrarForPlugin:@"PaytmPlugin"]];
   [RazorpayPlugin registerWithRegistrar:[registry registrarForPlugin:@"RazorpayPlugin"]];

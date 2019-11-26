@@ -27,6 +27,7 @@ import 'package:ricwala_application/fragment/main1.dart';
 import 'package:ricwala_application/model/ClientModel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+
 //import 'package:image_picker/image_picker.dart';  image_picker: ^0.6.0+8
 
 import 'package:youtube_player/youtube_player.dart';
@@ -35,11 +36,15 @@ import 'logout.dart';
 
 class DrawerItem {
   String title;
+
   IconData icon;
   DrawerItem(this.title, this.icon);
 }
 
 class HomePage extends StatefulWidget {
+
+  var valua;
+  HomePage(this.valua);
   final drawerItems = [
     new DrawerItem("Home", Icons.home),
     new DrawerItem("My Orders", Icons.offline_pin),
@@ -81,10 +86,65 @@ class HomePageState extends State<HomePage> {
     super.initState();
     showdata();
     total();
+    BuildContext context;
+    _selectedDrawerIndex=widget.valua;
+    //_showOKScreen();
     setState(() {
 
     });
   }
+
+  Future<bool> _onBackPressed() {
+    return  showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: new Text("Logout"),
+          content: new Text("Do you want to Exit ?"),
+          actions: <Widget>[
+            new FlatButton(
+              child: new Text("Yes"),
+              onPressed: () {
+                Navigator.of(context).pop(true);
+              },
+            ),
+            new FlatButton(
+              child: new Text("No"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    ) ??
+        false;
+  }
+
+  Widget roundedButton(String buttonLabel, Color bgColor, Color textColor) {
+    var loginBtn = new Container(
+      padding: EdgeInsets.all(5.0),
+      alignment: FractionalOffset.center,
+      decoration: new BoxDecoration(
+        color: bgColor,
+        borderRadius: new BorderRadius.all(const Radius.circular(10.0)),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: const Color(0xFF696969),
+            offset: Offset(1.0, 6.0),
+            blurRadius: 0.001,
+          ),
+        ],
+      ),
+      child: Text(
+        buttonLabel,
+        style: new TextStyle(
+            color: textColor, fontSize: 20.0, fontWeight: FontWeight.bold),
+      ),
+    );
+    return loginBtn;
+  }
+
 
   total() async {
      var  cartitem =  await DBProvider.db.getCount();
@@ -126,6 +186,47 @@ class HomePageState extends State<HomePage> {
         return new Text("Error");
     }
   }
+
+  _showOKScreen(BuildContext context) async {
+    // 1, 2
+    bool value = await Navigator.push(context,
+        MaterialPageRoute<bool>(builder: (BuildContext context) {
+          return Padding(
+              padding: const EdgeInsets.all(32.0),
+              // 3
+              child: Column(children: [
+                GestureDetector(
+                    child: Text('OK'),
+                    // 4, 5
+                    onTap: () {
+                      Navigator.pop(context, true);
+                    }),
+                GestureDetector(
+                    child: Text('NOT OK'),
+                    // 4, 5
+                    onTap: () {
+                      Navigator.pop(context, false);
+                    })
+              ]));
+        }));
+    // 6
+    var alert = AlertDialog(
+      content: Text((value != null && value)
+          ? "OK was pressed"
+          : "NOT OK or BACK was pressed"),
+      actions: <Widget>[
+        FlatButton(
+            child: Text('OK'),
+            // 7
+            onPressed: () {
+              Navigator.pop(context);
+            })
+      ],
+    );
+    // 8
+    showDialog(context: context, child: alert);
+  }
+
 
   Widget showImage() {
     return FutureBuilder<File>(
@@ -220,7 +321,10 @@ class HomePageState extends State<HomePage> {
         onTap: () => _onSelectItem(i),
       ));
     }
-    return new Scaffold(
+    return
+     new /*WillPopScope(
+        onWillPop: _onBackPressed,
+      child:*/ Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.green,
         title: new Image.asset('images/ricwallogo.png', fit: BoxFit.fill,alignment: Alignment.topRight,),
@@ -348,6 +452,7 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       body: _getDrawerItemWidget(_selectedDrawerIndex),
+    //  )
     );
   }
 }

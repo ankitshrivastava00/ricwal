@@ -64,7 +64,7 @@ class ThankYouState extends State<ThankYou> {
                               context,
                               new MaterialPageRoute(
                                   builder: (BuildContext context) =>
-                                      HomePage()));
+                                      HomePage(0)));
                         },
                         child: Text(
                           "Back to Home",

@@ -35,12 +35,8 @@ dependencies:
   flutter_local_notifications: ^0.6.1
   razorpay_plugin: ^0.2.9
   carousel_slider: ^1.3.0
-
-
-  #  google_places_picker: ^2.0.2+1
   flutter_places_dialog: ^1.0.5
-  google_places_picker: ^2.0.2+1
-
+  #google_places_picker: ^2.0.2+1
   paytm: ^0.0.5
   http: '>=0.11.3+12'
 

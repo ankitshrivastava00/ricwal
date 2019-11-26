@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/abc/MissMadhu/ricwal/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/abc/Documents/ricwal25/ricwal/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/checkout-1.5.2.aar/855675bd694a32184d75a42e7299363f/res/values-sw600dp-v13/values-sw600dp-v13.xml",

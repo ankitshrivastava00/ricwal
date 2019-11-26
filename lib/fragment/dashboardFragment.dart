@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 //import 'package:google_places_picker/google_places_picker.dart';
 import 'package:flutter_places_dialog/flutter_places_dialog.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:google_places_picker/google_places_picker.dart';
+//import 'package:google_places_picker/google_places_picker.dart';
 import 'package:ricwala_application/comman/Constants.dart';
 import 'package:ricwala_application/comman/CustomProgressLoader.dart';
 import 'package:ricwala_application/comman/LocationData.dart';
@@ -52,7 +52,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
     );*/
   }
 
-  _showAutocomplete() async {
+  /*_showAutocomplete() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     var place = await PluginGooglePlacePicker.showAutocomplete(mode: PlaceAutocompleteMode.MODE_FULLSCREEN);
 
@@ -67,7 +67,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
      // G_Latitude =place.latitude;
       //G_Longitude =place.longitude;
     });
-  }
+  }*/
 
   void increment(){
     setState(() => _itemCount = _itemCount+1);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player/youtube_player.dart';
 
+
 class VideoDetail extends StatefulWidget {
   @override
   _VideoDetailState createState() => _VideoDetailState();

@@ -48,14 +48,6 @@
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Lain-Lain"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Hapus penelusuran"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Telusuri"</string>
-    <string name="places_autocomplete_clear_button">Hapus penelusuran</string>
-    <string name="places_autocomplete_label">Pilih tempat</string>
-    <string name="places_autocomplete_no_results_for_query">Tidak ada hasil untuk %1$s</string>
-    <string name="places_autocomplete_search_hint">Telusuri</string>
-    <string name="places_cancel">Batal</string>
-    <string name="places_powered_by_google">Dengan teknologi Google</string>
-    <string name="places_search_error">Tidak dapat memuat hasil penelusuran.</string>
-    <string name="places_try_again">Coba lagi</string>
     <string msgid="146198913615257606" name="search_menu_title">"Telusuri"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

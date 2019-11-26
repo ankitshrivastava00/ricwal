@@ -6,7 +6,6 @@ import io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin;
 import com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin;
 import com.example.flutterplacesdialog.FlutterPlacesDialogPlugin;
 import io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin;
-import com.theantimony.googleplacespicker.GooglePlacesPickerPlugin;
 import io.flutter.plugins.pathprovider.PathProviderPlugin;
 import in.appyflow.paytm.PaytmPlugin;
 import com.hashbnm.razorpayplugin.RazorpayPlugin;
@@ -28,7 +27,6 @@ public final class GeneratedPluginRegistrant {
     FlutterLocalNotificationsPlugin.registerWith(registry.registrarFor("com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin"));
     FlutterPlacesDialogPlugin.registerWith(registry.registrarFor("com.example.flutterplacesdialog.FlutterPlacesDialogPlugin"));
     FluttertoastPlugin.registerWith(registry.registrarFor("io.github.ponnamkarthik.toast.fluttertoast.FluttertoastPlugin"));
-    GooglePlacesPickerPlugin.registerWith(registry.registrarFor("com.theantimony.googleplacespicker.GooglePlacesPickerPlugin"));
     PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));
     PaytmPlugin.registerWith(registry.registrarFor("in.appyflow.paytm.PaytmPlugin"));
     RazorpayPlugin.registerWith(registry.registrarFor("com.hashbnm.razorpayplugin.RazorpayPlugin"));

@@ -48,14 +48,6 @@
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Rôzne"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Vymazať vyhľadávanie"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Vyhľadávajte"</string>
-    <string name="places_autocomplete_clear_button">Vymazať vyhľadávanie</string>
-    <string name="places_autocomplete_label">Výber miesta</string>
-    <string name="places_autocomplete_no_results_for_query">Nenašli sa žiadne výsledky pre dopyt %1$s</string>
-    <string name="places_autocomplete_search_hint">Vyhľadávanie</string>
-    <string name="places_cancel">Zrušiť</string>
-    <string name="places_powered_by_google">Používa technológiu Google</string>
-    <string name="places_search_error">Výsledky vyhľadávania sa nedajú načítať.</string>
-    <string name="places_try_again">Skúsiť znova</string>
     <string msgid="146198913615257606" name="search_menu_title">"Vyhľadávanie"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

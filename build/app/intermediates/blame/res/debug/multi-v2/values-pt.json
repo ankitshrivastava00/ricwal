@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/abc/MissMadhu/ricwal/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
+            "outputFile": "/home/abc/Documents/ricwal25/ricwal/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
             "map": [
                 {
-                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/96ae8addd6909b2dbb87c201f5e300be/res/values-pt/values-pt.xml",
+                    "source": "/home/abc/.gradle/caches/transforms-1/files-1.1/core-1.0.1.aar/5f98178c97b94c7fe43201d1b64fad22/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

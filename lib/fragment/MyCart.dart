@@ -260,7 +260,7 @@ class CartState extends State<Cart> {
                 Navigator.push(
                     context,
                     new MaterialPageRoute(
-                        builder: (BuildContext context) => HomePage()));
+                        builder: (BuildContext context) => HomePage(0)));
               },
             ),
 

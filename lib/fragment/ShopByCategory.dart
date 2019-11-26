@@ -3,20 +3,13 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-//import 'package:image_picker/image_picker.dart';
-import 'package:path/path.dart';
-import 'package:ricwala_application/comman/Constants.dart';
-import 'package:ricwala_application/comman/CustomProgressLoader.dart';
-import 'package:ricwala_application/fragment/CatProductInfo.dart';
+import 'package:ricwala_application/activity/drawer.dart';
 import 'package:ricwala_application/model/CategoryModel.dart';
-import 'package:ricwala_application/model/Product_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
-void main() => runApp(new MaterialApp(home: new ShopByCategory(), debugShowCheckedModeBanner: false,),);
+import 'package:ricwala_application/fragment/CatProductInfo.dart';
 
 class ShopByCategory extends StatefulWidget {
   @override
-  ShopByCategoryState createState() => new ShopByCategoryState();
+  ShopByCategoryState createState() => ShopByCategoryState();
 }
 
 class ShopByCategoryState extends State<ShopByCategory> {
@@ -30,7 +23,6 @@ class ShopByCategoryState extends State<ShopByCategory> {
     super.initState();
     exapnalist("http://134.209.166.151/sortbycategory");
   }
-
 
   Future<Vehicle> exapnalist(String url) async {
     try {
@@ -95,43 +87,53 @@ class ShopByCategoryState extends State<ShopByCategory> {
             content.subcat, style: new TextStyle(fontSize: 18.0
           ), ),
         ),
-        ),
+      ),
       );
     return columnContent
     ;
   }
 
+  Future<bool> _onBackPressed() {
+
+    Navigator.pushReplacement(
+        context,
+        new MaterialPageRoute(
+            builder: (BuildContext context) => HomePage(0)));
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return new Scaffold(
-      body: new Container(
-          child:isLoading ? Center(
-              child: new Container(
-                child:
-                CircularProgressIndicator(valueColor: new AlwaysStoppedAnimation(Colors.green),
-                  strokeWidth: 5.0,
-                  semanticsLabel: 'is Loading',),
-              )
-          ): new ListView.builder(
-            itemCount: vehicles.length,
-            itemBuilder: (context, i) {
-              return new GestureDetector(
-                child: new Container(
-                  child: new ExpansionTile(
-                    title: new Text(vehicles[i].title, style: new TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                        color: Colors.green), ),
-                    children: <Widget>[
-                      new Column(
-                        children: _buildExpandableContent(vehicles[i],context),
+    return new WillPopScope(
+        onWillPop: _onBackPressed,
+        child: Scaffold(
+            body: new Container(
+              child:isLoading ? Center(
+                  child: new Container(
+                    child:
+                    CircularProgressIndicator(valueColor: new AlwaysStoppedAnimation(Colors.green),
+                      strokeWidth: 5.0,
+                      semanticsLabel: 'is Loading',),
+                  )
+              ): new ListView.builder(
+                itemCount: vehicles.length,
+                itemBuilder: (context, i) {
+                  return new GestureDetector(
+                    child: new Container(
+                      child: new ExpansionTile(
+                        title: new Text(vehicles[i].title, style: new TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.green), ),
+                        children: <Widget>[
+                          new Column(
+                            children: _buildExpandableContent(vehicles[i],context),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-                /*onTap: () {
+                    ),
+                    /*onTap: () {
                   Navigator.of(context).push(
                       new MaterialPageRoute(
                         builder:(BuildContext context) =>
@@ -147,12 +149,13 @@ class ShopByCategoryState extends State<ShopByCategory> {
                       textColor: Colors.white,
                       fontSize: 16.0);
                 },*/
-              );
+                  );
 
-            },
-          ),
+                },
+              ),
 
-      )
+            )
+        )
     );
   }
 }

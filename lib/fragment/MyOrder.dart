@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:ricwala_application/activity/drawer.dart';
 //import 'package:image_picker/image_picker.dart';
 import 'package:ricwala_application/comman/Constants.dart';
 import 'package:ricwala_application/comman/CustomProgressLoader.dart';
@@ -24,9 +25,9 @@ class MyOrderState extends State<MyOrder> {
   Future initState() {
     super.initState();
     showorder();
+    //BuildContext context;
     count == "0";
   }
-
 
   Future showorder() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -116,10 +117,46 @@ class MyOrderState extends State<MyOrder> {
     }
   }
 
+  Future<bool> _onBackPressed() {
+
+    Navigator.pushReplacement(
+        context,
+        new MaterialPageRoute(
+            builder: (BuildContext context) => HomePage(0)));
+  }
+
+  Widget roundedButton(String buttonLabel, Color bgColor, Color textColor) {
+    var loginBtn = new Container(
+      padding: EdgeInsets.all(5.0),
+      alignment: FractionalOffset.center,
+      decoration: new BoxDecoration(
+        color: bgColor,
+        borderRadius: new BorderRadius.all(const Radius.circular(10.0)),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: const Color(0xFF696969),
+            offset: Offset(1.0, 6.0),
+            blurRadius: 0.001,
+          ),
+        ],
+      ),
+      child: Text(
+        buttonLabel,
+        style: new TextStyle(
+            color: textColor, fontSize: 20.0, fontWeight: FontWeight.bold),
+      ),
+    );
+    return loginBtn;
+  }
+
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-     return new Scaffold(
+
+     return new WillPopScope(
+        onWillPop: _onBackPressed,
+       child: Scaffold(
        body: new Container(
            child:isLoading ? Center(
                child: new Container(
@@ -209,7 +246,7 @@ class MyOrderState extends State<MyOrder> {
              );
            }),
        )
-     );
+     ));
 
   }
 }

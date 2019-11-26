@@ -48,14 +48,6 @@
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Razno"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Brisanje pretraživanja"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Pretražite"</string>
-    <string name="places_autocomplete_clear_button">Isprazni pretraživanje</string>
-    <string name="places_autocomplete_label">Odabir mjesta</string>
-    <string name="places_autocomplete_no_results_for_query">Nema rezultata za upit: %1$s</string>
-    <string name="places_autocomplete_search_hint">Pretraživanje</string>
-    <string name="places_cancel">Odustani</string>
-    <string name="places_powered_by_google">Pokreće Google</string>
-    <string name="places_search_error">Rezultati pretraživanja ne mogu se učitati.</string>
-    <string name="places_try_again">Pokušaj ponovno</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pretraživanje"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

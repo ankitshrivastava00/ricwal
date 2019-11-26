@@ -76,7 +76,7 @@ class OtpvarifyState extends State<Otpvarify> {
         Navigator.pushReplacement(
             context,
             new MaterialPageRoute(
-                builder: (BuildContext context) => HomePage()));
+                builder: (BuildContext context) => HomePage(0)));
         return reply;
       } else {
         Fluttertoast.showToast(
