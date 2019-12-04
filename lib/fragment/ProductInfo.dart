@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -91,13 +92,17 @@ class productInfoState extends State<productInfo> {
       request.headers.set('content-type', 'application/json');
       request.add(utf8.encode(json.encode(jsonMap)));
       HttpClientResponse response = await request.close();
+
       // todo - you should check the response.statusCode
       var reply = await response.transform(utf8.decoder).join();
       httpClient.close();
+
       Map data = json.decode(reply);
 
       for (var word in data['images']) {
+       // log("image"+ data['images']);
         String image = word["imageUrl"].toString();
+
         setState(() {
           list.add(image);
         });

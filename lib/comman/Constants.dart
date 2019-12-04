@@ -22,5 +22,5 @@ class Constants{
   static final String FARMERWORK_URL = BaseURL+"/firmworks";
   static final String ADDRESS_URL = BaseURL+"/loginWebService/userdetail";
   static final String CHECKSUM_URL = BaseURL+"/generateChecksum";
-  static final String GETIMAGE = BaseURL+"/getProductById/get_image";
+  static final String GETIMAGE = BaseURL+"/getProductById";
 }

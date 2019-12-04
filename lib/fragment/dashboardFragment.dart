@@ -37,6 +37,8 @@ class dashboardFragmentState extends State<dashboardFragment> {
   var currentLocation = LocationData;
   String pickUpLocation="Enter Location";
   bool pickUpBool=true;
+  String id;
+
 
   @override
   void initState() {
@@ -44,7 +46,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
     FlutterPlacesDialog.setGoogleApiKey("AIzaSyBEwxjE4AxdBSQHseBvJ03xv4rfPpwBRFQ");
   //  FlutterPlacesDialog.setGoogleApiKey("AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y");
   //  FlutterPlacesDialog.setGoogleApiKey("AIzaSyCnrQ33dccN8jKIZx9JfQzhDpv-1bfuqL0");
-    Map map = {"page": '${_itemCount}'};
+    Map map = {"page": '${_itemCount}',"user_id":id};
     apiRequest(Constants.PRODUCTLIST_URL, map);
     /*PluginGooglePlacePicker.initialize(
       androidApiKey: "AIzaSyCVHyHfg8USjCuVztU-x6VAQo9UdFVZ88Y",
@@ -96,7 +98,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
     //   CustomProgressLoader.cancelLoader(context);
 
         for (var word in data['data']) {
-          String id = word["_id"].toString();
+          id = word["_id"].toString();
           String name = word["product_name"].toString();
           String company = word["company_name"].toString();
           String image = word["image"].toString();
@@ -106,6 +108,8 @@ class dashboardFragmentState extends State<dashboardFragment> {
           String quantity = word["quantity"].toString();
           String price = word["price"].toString();
           String unit = word["unit"].toString();
+          String wishstatus =  word["status"].toString();
+
           setState(() {
             lis.add(Product_model(
                 id,
@@ -204,9 +208,10 @@ class dashboardFragmentState extends State<dashboardFragment> {
       httpClient.close();
       Map data = json.decode(reply);
       String message = data['message'].toString();
-
+      String _status = data['status'].toString();
+      print('RESPONCE_DATA : ' + _status);
 //var array = data['data'];
-      print('RESPONCE_DATA : ' + status);
+     // print('RESPONCE_DATA : ' + status);
 
       if (message == "success") {
         Fluttertoast.showToast(
@@ -290,6 +295,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
         .of(context)
         .orientation;
     Color _iconColor = Colors.green;
+    Color _iconColorred = Colors.red;
 
     Text txt = Text('',
         style: TextStyle(
@@ -363,8 +369,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
                                       SharedPreferences prefs =
                                       await SharedPreferences.getInstance();
                                       Map map = {
-                                        "user_id":
-                                        '${prefs.getString('_id').toString()}',
+                                        "user_id": '${prefs.getString('_id').toString()}',
                                         "product_id": '${lis[index].id}',
                                         "product_name": '${lis[index].name}',
                                         "company_name": '${lis[index].company}',
@@ -375,6 +380,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
                                         "unit": '${lis[index].unit}',
                                         "price": '${lis[index].price}'
                                       };
+
                                       addWishlist(Constants.WISHLIST_URL, map);
                                     },
                                     child: new Container(
@@ -383,8 +389,8 @@ class dashboardFragmentState extends State<dashboardFragment> {
                                       alignment: Alignment.topRight,
                                       child: new Icon(
                                         Icons.favorite,
-                                        color: _iconColor,
-                                      ),
+                                        color: _iconColor),
+
                                       width: 20.0,
                                       height: 20.0,
                                     ),
@@ -450,6 +456,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
                                                   .normal),
                                         ),
                                       ),
+
                                       new Container(
                                         margin: EdgeInsets.fromLTRB(30.0, 0.0, 0.0, 0.0),
                                         alignment: Alignment.topLeft,
