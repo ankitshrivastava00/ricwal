@@ -117,13 +117,15 @@ class SearchBarState extends State<SearchBar> {
         String image = word["image"].toString();
         String description = word["description"].toString();
         String status = word["stock_status"].toString();
-        String category = word["category"].toString();
-        String quantity = word["quantity"].toString();
+        String category = word["productcategory"].toString();
+        String quantity = word["productQuantity"].toString();
         String price = word["price"].toString();
-        String unit = word["unit"].toString();
+        String unit = word["date"].toString();
+        String wishstatsus = word["status"].toString();
         setState(() {
-          lis.add(Product_model(id, image, name, company, description, category,
-              quantity, status, price, unit));
+
+          lis.add(Product_model(id, image, name, company, description,
+              category, quantity, status, price, unit,wishstatsus));
         });
       }
 //var array = data['data'];
@@ -190,21 +192,22 @@ class SearchBarState extends State<SearchBar> {
             textColor: Colors.white,
             fontSize: 16.0);
       } else {
-        for (var word in data['details']) {
+        for (var word in data['data']) {
           String id = word["_id"].toString();
           String name = word["product_name"].toString();
           String company = word["company_name"].toString();
           String image = word["image"].toString();
           String description = word["description"].toString();
           String status = word["stock_status"].toString();
-          String category = word["category"].toString();
-          String quantity = word["quantity"].toString();
+          String category = word["productcategory"].toString();
+          String quantity = word["productQuantity"].toString();
           String price = word["price"].toString();
-          String unit = word["unit"].toString();
+          String unit = word["date"].toString();
+          String wishstatsus = word["status"].toString();
           setState(() {
-            lis.clear();
+
             lis.add(Product_model(id, image, name, company, description,
-                category, quantity, status, price, unit));
+                category, quantity, status, price, unit,wishstatsus));
           });
         }
       }

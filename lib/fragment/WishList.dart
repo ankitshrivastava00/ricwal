@@ -66,13 +66,15 @@ class WishListState extends State<WishList> {
           String image = word["image"].toString();
           String description = word["description"].toString();
           String status = word["stock_status"].toString();
-          String category = word["category"].toString();
-          String quantity = word["quantity"].toString();
+          String category = word["productcategory"].toString();
+          String quantity = word["productQuantity"].toString();
           String price = word["price"].toString();
-          String unit = word["unit"].toString();
+          String unit = word["date"].toString();
+          String wishstatsus = word["status"].toString();
           setState(() {
+
             lis.add(Product_model(id, image, name, company, description,
-                category, quantity, status, price, unit));
+                category, quantity, status, price, unit,wishstatsus));
           });
         }
       }

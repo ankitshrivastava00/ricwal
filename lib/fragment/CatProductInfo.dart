@@ -76,10 +76,11 @@ class CatProductInfoState extends State<CatProductInfo> {
           String quantity = word["productQuantity"].toString();
           String price = word["price"].toString();
           String unit = word["date"].toString();
+          String wishstatsus = word["status"].toString();
           setState(() {
 
             lis.add(Product_model(id, image, name, company, description,
-                category, quantity, status, price, unit));
+                category, quantity, status, price, unit,wishstatsus));
           });
         }
       }

@@ -67,19 +67,20 @@ class MyOrderState extends State<MyOrder> {
       } else {
         for (var word in data['details']) {
           String id = word["_id"].toString();
-          String name = word["productname"].toString();
+          String name = word["product_name"].toString();
           String company = word["company_name"].toString();
           String image = word["image"].toString();
           String description = word["description"].toString();
           String status = word["stock_status"].toString();
           String category = word["productcategory"].toString();
           String quantity = word["productQuantity"].toString();
-          String price = word["productPrice"].toString();
+          String price = word["price"].toString();
           String unit = word["date"].toString();
+          String wishstatsus = word["status"].toString();
           setState(() {
 
             lis.add(Product_model(id, image, name, company, description,
-                category, quantity, status, price, unit));
+                category, quantity, status, price, unit,wishstatsus));
           });
         }
       }
