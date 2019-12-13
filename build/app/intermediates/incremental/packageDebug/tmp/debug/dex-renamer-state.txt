@@ -1,4 +1,4 @@
-#Thu Dec 05 18:16:31 IST 2019
+#Fri Dec 06 11:25:31 IST 2019
 base.0=/home/abc/Documents/ricwal25/ricwal/build/app/intermediates/transforms/dexMerger/debug/0
 path.1=classes2.dex
 renamed.1=classes2.dex

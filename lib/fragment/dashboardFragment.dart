@@ -422,7 +422,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
                                         );
                                         val = '${lis[index].wishstatus}';
 
-                                        if (user_wishstatus == "1") {
+                                        if (val == "1") {
                                           setState(()  {
 
                                             _affectedByStateChange = new Icon(
@@ -432,7 +432,7 @@ class dashboardFragmentState extends State<dashboardFragment> {
 
                                           });
 
-                                        } else if (user_wishstatus == "0") {
+                                        } else if (val == "0") {
                                           setState(() async {
                                             _affectedByStateChange = new Icon(
                                                 Icons.favorite,
